@@ -1,0 +1,23 @@
+CREATE DATABASE IF NOT EXISTS online_retail_dataset;
+
+CREATE TABLE IF NOT EXISTS online_retail_dataset.sales (
+  InvoiceNo VARCHAR(15) NOT NULL,
+  Description VARCHAR(100),
+  Quantity INT NOT NULL CHECK(Quantity > 0),
+  InvoiceDate VARCHAR(50) NOT NULL,
+  UnitPrice DECIMAL(6, 2) NOT NULL CHECK(UnitPrice > 0),
+  CustomerID INT UNSIGNED,
+  Country VARCHAR(50),
+  Discount DECIMAL(3, 2) DEFAULT 0.00,
+  PaymentMethod VARCHAR(50),
+  ShippingCost DECIMAL(5, 2) DEFAULT 0.00,
+  Category VARCHAR(50),
+  SalesChannel ENUM('Online', 'In-store') NOT NULL,
+  ReturnStatus ENUM('Returned', 'Not Returned') DEFAULT 'Not Returned',
+  ShipmentProvider VARCHAR(50),
+  WarehouseLocation VARCHAR(100),
+  OrderPriority ENUM('Low', 'Medium', 'High') DEFAULT 'Low',
+  PRIMARY KEY (InvoiceNo, Description),
+  INDEX idx_customer (CustomerID),
+  INDEX idx_invoice_date (InvoiceDate)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

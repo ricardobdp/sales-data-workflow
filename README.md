@@ -9,7 +9,7 @@ En este proyecto realicé un análisis de inicio a fin en un dataset de ventas, 
 * **Visualización**: Tableau (Storytelling interactivo).
 * **Metodología**: SCRUM / CRISP-DM.
 
-## Desarrollo del Proyecto (6-Stage Framework)
+## Desarrollo del Proyecto (Framework de 6 Pasos)
 
 ### 1. Estrategia y Marco Ético
 * **Diccionario de Datos**: Definición técnica de 16 variables.
@@ -33,6 +33,6 @@ En este proyecto realicé un análisis de inicio a fin en un dataset de ventas, 
 * **Storytelling**: Implementación de filtros de acción y jerarquías para permitir el "Drill-down" desde la visión global del país hasta el detalle del producto.
 * **UAT**: Validación de resultados visuales contra la fuente de verdad (SQL).
 
-### 6. Monitoreo y Salud (Observability)
+### 6. Monitoreo y Salud (Observabilidad)
 * **Data Drift**: Definición de umbrales para detectar cambios bruscos en el comportamiento de las ventas.
 * **Auditoría**: Creación de un script de monitoreo de salud para supervisar el volumen y la frescura de los datos cargados.

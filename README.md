@@ -28,11 +28,11 @@ En este proyecto realicé un análisis de inicio a fin en un dataset de ventas, 
 * **Procesamiento**: Uso de CTEs (Common Table Expressions) para modularizar el cálculo de Net Revenue.
 * **Estadística**: Aplicación de medidas de tendencia central y dispersión para identificar el ticket promedio y el rendimiento por categoría.
 
-5. Comunicación Estratégica
-Visualización: Construcción de un Dashboard en Tableau enfocado en el usuario final.
-Storytelling: Implementación de filtros de acción y jerarquías para permitir el "Drill-down" desde la visión global del país hasta el detalle del producto.
-UAT: Validación de resultados visuales contra la fuente de verdad (SQL).
+### 5. Comunicación Estratégica
+* **Visualización**: Construcción de un Dashboard en Tableau enfocado en el usuario final.
+* **Storytelling**: Implementación de filtros de acción y jerarquías para permitir el "Drill-down" desde la visión global del país hasta el detalle del producto.
+* **UAT**: Validación de resultados visuales contra la fuente de verdad (SQL).
 
-6. Monitoreo y Salud (Observability)
-Data Drift: Definición de umbrales para detectar cambios bruscos en el comportamiento de las ventas.
-Auditoría: Creación de un script de monitoreo de salud para supervisar el volumen y la frescura de los datos cargados.
+### 6. Monitoreo y Salud (Observability)
+* **Data Drift**: Definición de umbrales para detectar cambios bruscos en el comportamiento de las ventas.
+* **Auditoría**: Creación de un script de monitoreo de salud para supervisar el volumen y la frescura de los datos cargados.

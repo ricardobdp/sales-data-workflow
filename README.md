@@ -1,4 +1,4 @@
-# Retail Sales Analysis: Enterprise Data Workflow
+# Análisis de Ventas: Flujo de Datos
 
 ### Descripción
 En este proyecto realicé un análisis de inicio a fin en un dataset de ventas, aplicando un marco de trabajo que abarca desde la Gobernanza de Datos hasta la Observabilidad post-entrega.

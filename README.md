@@ -5,7 +5,7 @@ En este proyecto realicé un análisis de inicio a fin en un dataset de ventas, 
 
 ## Stack Tecnológico
 * **Limpieza Inicial**: Excel (Validación y limpieza de nulos).
-* **Base de Datos**: MySQL (procesamiento masivo).
+* **Base de Datos**: MySQL (procesamiento masivo y elaboración de métricas).
 * **Visualización**: Tableau (Storytelling interactivo).
 * **Metodología**: SCRUM / CRISP-DM.
 
@@ -17,7 +17,7 @@ En este proyecto realicé un análisis de inicio a fin en un dataset de ventas, 
 * **Ética**: Anonimización de CustomerID y cumplimiento de principios de transparencia en el filtrado de datos.
 
 ### 2. Gestión Predictiva (Agile)
-* **Metodología**: Uso de Kanban para el control de flujo.
+* **Metodología**: Uso de SCRUM para el control de flujo.
 * **Definition of Done (DoD)**: Cada consulta SQL fue validada bajo criterios de legibilidad (indentación), comentarios de lógica y validación con muestras de Excel.
 
 ### 3. Infraestructura Robusta (DataOps)
@@ -25,7 +25,7 @@ En este proyecto realicé un análisis de inicio a fin en un dataset de ventas, 
 * **Data Quality Gates**: Implementación de scripts SQL automáticos para detectar nulos, valores negativos en UnitPrice/Quantity y Categorías huérfanas.
 
 ### 4. Análisis Modular (CRISP-DM)
-* **Procesamiento**: Uso de CTEs (Common Table Expressions) para modularizar el cálculo de Net Revenue.
+* **Procesamiento**: Uso de Views para modularizar el cálculo de Net Revenue y el uso de filtros.
 * **Estadística**: Aplicación de medidas de tendencia central y dispersión para identificar el ticket promedio y el rendimiento por categoría.
 
 ### 5. Comunicación Estratégica

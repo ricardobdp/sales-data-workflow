@@ -1,10 +1,8 @@
 -- Creación de la "View", filtrado de los pedidos devueltos y elaboración del campo calculado 'NetRevenue'.
 CREATE VIEW AS sales_insights
-  SELECT InvoiceNo, Description, Quantity, InvoiceDate, UnitPrice,
-	CustomerID, Country, Discount, PaymentMethod, ShippingCost, Category,
-  	SalesChannel, ReturnStatus, ShipmentProvider, WarehouseLocation,
-  	OrderPriority,
-	(UnitPrice * Quantity) * (1 - Discount) AS NetRevenue
+  SELECT InvoiceNo, Quantity, InvoiceDate, UnitPrice, Country, Discount, 
+	ShippingCost, Category, ReturnStatus, ShipmentProvider, WarehouseLocation, 
+	(UnitPrice * Quantity) * (1 - Discount) AS NetRevenue	-- Campo calculado de Ingreso por Ticket
   FROM sales
   WHERE ReturnStatus = 'Not Returned';
 

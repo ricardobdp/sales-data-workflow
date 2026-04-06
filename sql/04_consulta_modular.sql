@@ -41,17 +41,3 @@ SELECT WarehouseLocation, ShipmentProvider,
 FROM sales_insights
 GROUP BY WarehouseLocation, ShipmentProvider
 ORDER BY AvgCost DESC, 
-
-	-- 10 productos más rentables
-SELECT Description, Category, SUM(NetRevenue) AS TotalSales
-FROM sales_insights
-GROUP BY Description, Category
-ORDER BY TotalSales DESC
-LIMIT 10;
-
-	-- 5 paises con mayor volumen de pedidos
-SELECT Country, COUNT(InvoiceNo) AS TotalVolume
-FROM sales_insights
-GROUP BY Country, 
-ORDER BY TotalVolume DESC
-LIMIT 5;
